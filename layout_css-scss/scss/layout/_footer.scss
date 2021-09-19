@@ -1,0 +1,98 @@
+.page-footer {
+  margin-top: 50px;
+  .footer-top {
+    background-color: black;
+    padding: 10px 0;
+    .footer-left {
+      p {
+        color: red;
+      }
+    }
+    .footer-right {
+      p {
+        color: green;
+      }
+    }
+  }
+  .form-newsletter {
+    position: relative;
+    display: inline-block;
+  }
+  .footer-form {
+    text-align: center;
+    a {
+      color: red;
+    }
+  }
+  .footer-bottom {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #333;
+    p {
+      font-size: 16px;
+      color: white;
+    }
+  }
+  .form-newsletter {
+    position: relative;
+    display: inline-block;
+    label {
+      color: white;
+    }
+    input {
+      outline: none;
+      width: 200px;
+      padding: 5px 25px 5px 6px;
+      border-radius: 6px;
+      border: none;
+      margin-left: 10px;
+    }
+    .btn-submit {
+      position: absolute;
+      right: 8px;
+      top: 4px;
+    }
+  }
+  .socials {
+    color: white;
+    line-height: 30px;
+    li:first-child {
+      display: contents;
+    }
+  }
+  .footer-middle-col {
+    @include pxRem(margin-top, 30);
+    .link-list {
+      li {
+        color: map-get($colors, primary);
+        @include pxRem(padding, 5 0);
+        &:hover {
+          color: map-get($colors, red);
+        }
+      }
+    }
+  }
+  .footer-link-title {
+    @include pxRem(font-size, 18);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+}
+
+@include respond-below(medium) {
+  .page-footer {
+    .footer-top {
+      @include pxRem(padding, 15px 0);
+    }
+    .footer-bottom {
+      @include pxRem(padding, 10px 0);
+    }
+    .socials {
+      display: none
+    }
+  }
+  .footer-middle-col {
+    @include pxRem(margin-top, 20);
+  }
+}
+

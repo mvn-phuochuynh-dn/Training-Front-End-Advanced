@@ -1,0 +1,18 @@
+.btn {
+  @include pxRem(font-size, 14);
+  border: none;
+  background: none;
+}
+.btn-primary {
+  width: 100%;
+  display: block;
+  background: #173346;
+  color: white;
+  text-align: center;
+  padding: 6px 6px;
+  margin-top: 10px;
+  border-radius: 8px;
+  &:hover {
+    color: #6bb039;
+  }
+}
