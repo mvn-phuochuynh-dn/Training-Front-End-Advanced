@@ -1,7 +1,6 @@
 import './scss/styles.scss';
 import { FaArrowRight,FaHeart, FaSearch, FaUser,FaShoppingCart,FaEye, FaDumbbell, FaTrophy, FaChevronLeft, FaChevronRight, FaTruck, FaHeadset, FaDonate, FaPlus, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook, FaFacebookF, FaTwitter, FaInstagram, FaLinkedin, FaPinterestP, FaStoreAlt, FaChevronUp } from "react-icons/fa";
 
-
 function App() {
   return (
     <div>
