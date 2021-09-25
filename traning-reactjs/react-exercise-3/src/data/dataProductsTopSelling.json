@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "img": "./template/asset/img/pr-01.jpg",
+        "name": "Shoes Huarache – TT100",
+        "price": [145],
+        "color": ["blue", "cyan"],
+        "itemInCart": false
+    },
+    {
+        "id": 1,
+        "img": "./template/asset/img/pr-03.jpg",
+        "name": "SwimZip Men's Long Sleeve Zipper",
+        "price": [65],
+        "color": [],
+        "itemInCart": false
+    },
+    {
+        "id": 2,
+        "img": "./template/asset/img/pr-04.jpg",
+        "name": "Men's Tops Long Sleeve Shirts",
+        "price": [99, 65],
+        "color": ["pink", "black", "blue"],
+        "itemInCart": false
+    },
+    {
+        "id": 3,
+        "img": "./template/asset/img/pr-07.jpg",
+        "name": "Elip Power Max",
+        "price": [35],
+        "color": [],
+        "itemInCart": false
+    },
+    {
+        "id": 4,
+        "img": "./template/asset/img/pr-09.jpg",
+        "name": "Men's Sports Jogging Workout Shorts",
+        "price": [29],
+        "color": ["blue", "black"],
+        "itemInCart": false
+    }
+]
