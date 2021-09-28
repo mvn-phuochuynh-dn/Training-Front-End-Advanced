@@ -5,14 +5,16 @@
         "name": "Nike As Dri-Fit Training",
         "price": [65],
         "color": ["black", "blue", "pink"],
+        "sale": false,
         "itemInCart": false
     },
     {
         "id": 1,
         "img": "./template/asset/img/pr-08.jpg",
-        "name": "SwimZip Men's Long Sleeve Zipper",
+        "name": "Body Trimmer",
         "price": [65],
         "color": [],
+        "sale": true,
         "itemInCart": false
     },
     {
@@ -21,6 +23,7 @@
         "name": "Men's Tops Long Sleeve Shirts",
         "price": [99, 65],
         "color": ["pink", "black", "blue"],
+        "sale": false,
         "itemInCart": false
     },
     {
@@ -28,7 +31,8 @@
         "img": "./template/asset/img/pr-13.jpg",
         "name": "Elip Power Max",
         "price": [35],
-        "color": [],
+        "sale": false,
+        "color": ["red", "black"],
         "itemInCart": false
     }
 ]
