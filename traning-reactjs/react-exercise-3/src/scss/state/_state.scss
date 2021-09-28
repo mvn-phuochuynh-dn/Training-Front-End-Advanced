@@ -1,0 +1,52 @@
+.top-right {
+    position: absolute;
+    @include pxRem(top, 30);
+    @include pxRem(right, 20);
+}
+.bottom-right {
+    position: absolute;
+    @include pxRem(right, 10);
+    @include pxRem(bottom, 10);
+}
+.center-left {
+    position: absolute;
+    @include pxRem(left, 5);
+    @extend %transY;
+    top: 50%;
+}
+.center-right{
+    position: absolute;
+    @include pxRem(right, 5);
+    @extend %transY;
+    top: 50%;
+}
+hr {
+    color: map-get($colors, hr-color);
+    width: 75%;
+    margin: f-pxRem(70) auto;
+}
+.hover-blue {
+    color: map-get($colors, white);
+    &:hover {
+        color: map-get($colors, bottom-hover-color);
+    }
+}
+.display-none {
+    display: none;
+}
+.block-title-top {
+    @include pxRem(margin-top, 100);
+    text-align: map-get($txt-align, center);
+    .section-title {
+        @include pxRem(font-size, 30);
+        color: map-get($colors, black);
+    }
+    i {
+        @include pxRem(font-size, 25);
+        color: map-get($colors, txt-black);
+    }
+    p {
+        @include pxRem(font-size, 16);
+        margin: f-pxRem(10) 0;
+    }
+}

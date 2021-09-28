@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "img": "./template/asset/img/pr-01.jpg",
+        "name": "Nike As Dri-Fit Training",
+        "price": [65],
+        "color": ["black", "blue", "pink"],
+        "sale": false,
+        "itemInCart": false
+    },
+    {
+        "id": 1,
+        "img": "./template/asset/img/pr-02.jpg",
+        "name": "Body Trimmer",
+        "price": [65],
+        "color": [],
+        "sale": true,
+        "itemInCart": false
+    },
+    {
+        "id": 2,
+        "img": "./template/asset/img/pr-03.jpg",
+        "name": "Men's Tops Long Sleeve Shirts",
+        "price": [99, 65],
+        "color": ["pink", "black", "blue"],
+        "sale": false,
+        "itemInCart": false
+    },
+    {
+        "id": 3,
+        "img": "./template/asset/img/pr-04.jpg",
+        "name": "Elip Power Max",
+        "price": [35],
+        "sale": false,
+        "color": ["red", "black"],
+        "itemInCart": false
+    },
+    {
+        "id": 4,
+        "img": "./template/asset/img/pr-07.jpg",
+        "name": "Nike As Dri-Fit Training",
+        "price": [65],
+        "color": ["black", "blue", "pink"],
+        "sale": false,
+        "itemInCart": false
+    },
+    {
+        "id": 5,
+        "img": "./template/asset/img/pr-08.jpg",
+        "name": "Body Trimmer",
+        "price": [65],
+        "color": [],
+        "sale": false,
+        "itemInCart": false
+    },
+    {
+        "id": 6,
+        "img": "./template/asset/img/pr-10.jpg",
+        "name": "Men's Tops Long Sleeve Shirts",
+        "price": [99, 65],
+        "color": ["pink", "black", "blue"],
+        "sale": true,
+        "itemInCart": false
+    },
+    {
+        "id": 7,
+        "img": "./template/asset/img/pr-11.jpg",
+        "name": "Elip Power Max",
+        "price": [35],
+        "sale": false,
+        "color": ["red", "black"],
+        "itemInCart": false
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "img": "./template/asset/img/accessories-for-man.jpg",
+        "alt": "accessories-for-man",
+        "block": "FOR MEN",
+        "sub": "ACCESSORIES"
+    },
+    {
+        "id": 1,
+        "img": "./template/asset/img/training-clothing-for-women.jpg",
+        "alt": "training-clothing-for-women",
+        "block": "FOR WOMEN",
+        "sub": "TRAINING CLOTHING"
+    },
+    {
+        "id": 2,
+        "img": "./template/asset/img/summer-sale.jpg",
+        "alt": "summer-sale",
+        "block": "-50% OFF",
+        "sub": "SUMMER SALE"
+    }
+]
