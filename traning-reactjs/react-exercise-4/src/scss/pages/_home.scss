@@ -1,0 +1,266 @@
+.page-main {
+    //section-carousels
+    .carousel-list {
+        .carousel-item {
+            position: relative;
+        }
+        .carousel-img {
+            img {
+                width: 100%;
+            }
+        }
+        .adv-banner-content {
+            $left: 15%;
+            position: absolute;
+            left: $left;
+            max-width: calc(100% - #{$left});
+        }
+        .carousel-pagination {
+            @include pxRem(bottom, 20);
+            @extend %transX;
+            position: absolute;
+            left: 50%;
+            li {
+                @extend %radiusCircle;
+                @include pxRem(width, 10);
+                @include pxRem(height, 10);
+                background-color: map-get($colors, btn-main);
+                display: inline-block;
+            }
+        }
+    }
+    //section-clothe-types
+    .section-clothe-types {
+        .clothe-type-item {
+            position: relative;
+        }
+        .clothe-type-img {
+            position: relative;
+            left: 0;
+            top: 0;
+            img {
+                width: 100%;
+                @include pxRem(max-height, 400);
+            }
+        }
+        .type-content {
+            $left: 20%;
+            position: absolute;
+            top: 50%;
+            @extend %transY;
+            left: $left;
+            max-width: calc(100% - #{$left});
+            text-transform: uppercase;
+        }
+    }
+    //section-products
+    .section-products {
+        .product-tab-list {
+            text-align: map-get($txt-align, center);
+        }
+        .tab-item {
+            $border: f-pxRem(2);
+            $border-color: map-get($colors, btn-main);
+            $border-bottom: $border solid $border-color;
+            @include pxRem(font-size, 18);
+            display: inline-block;
+            &:first-child {
+                border-bottom: $border-bottom;
+            }
+            &:hover {
+                border-bottom: $border-bottom;
+                @include pxRem(padding-bottom, 5);
+            }
+        }
+        .product-list {
+            flex-wrap: wrap;
+        }
+    }
+    //section-sale-off
+    .section-sales-off {
+        position: relative;
+        .sales-off-content {
+            $left: 20%;
+            position: absolute;
+            top: 50%;
+            @extend %transY;
+            left: $left;
+            color: map-get($colors, white);
+            max-width: calc(100% - #{$left});
+        }
+    }
+    //section-top-selling
+    // .section-top-selling {
+    //     .block-title-top {
+    //         @include pxRem(margin-top, 100);
+    //         text-align: map-get($txt-align, center);
+    //         .section-title {
+    //             @include pxRem(font-size, 30);
+    //             color: map-get($colors, black);
+    //         }
+    //         i {
+    //             @include pxRem(font-size, 25);
+    //             color: map-get($colors, txt-black);
+    //         }
+    //         p {
+    //             @include pxRem(font-size, 16);
+    //             margin: f-pxRem(10) 0;
+    //         }
+    //     }
+    // }
+    //section-latest-new
+    .section-latest-news {
+        .latest-news-item {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .latest-news-content {
+            .section-sub-title {
+                @include pxRem(font-size, 16);
+                font-weight: map-get($font-weight, medium);
+                text-transform: inherit;
+                a {
+                    color: map-get($colors, black);
+                    &:hover {
+                        color: map-get($colors, btn-main);
+                    }
+                }
+            }
+            .time-post {
+                time {
+                    color: map-get($colors, black);
+                }
+            }
+        }
+    }
+    //section-services
+    .section-services {
+        .service-item {
+            text-align: map-get($txt-align, center);
+        }
+        i {
+            @include pxRem(font-size, 40);
+            color: map-get($colors, btn-main);
+        }
+        .service-item-info {
+            .section-sub-title {
+                @include pxRem(font-size, 16);
+                color: map-get($colors, black);
+            }
+        }
+    }
+}
+.btn-move-top {
+    i {
+        display: block;
+        @include pxRem(font-size, 20);
+    }
+    @include respond-below(large) {
+        @include pxRem(bottom, 100);
+    }
+}
+// === RESPOND BELOW ===
+@include respond-below(wide) {
+    html {
+        @include pxRem(font-size, 13);
+    }
+    .page-main {
+        .section-clothe-types,
+        .section-products,
+        .section-top-selling,
+        .section-latest-news,
+        .section-services {
+            @include pxRem(padding-left, 100);
+            @include pxRem(padding-right, 100);
+        }
+    }
+}
+@include respond-below(medium) {
+    html {
+        @include pxRem(font-size, 16);
+    }
+    .page-main {
+        .section-carousels {
+            .section-title {
+                @include pxRem(font-size, 35);
+            }
+        }
+        .section-clothe-types,
+        .section-products,
+        .section-top-selling,
+        .section-latest-news,
+        .section-services {
+            @include pxRem(padding-left, 100);
+            @include pxRem(padding-right, 100);
+        }
+        .section-clothe-types {
+            .clothe-type-item {
+                @include pxRem(padding-top, 20);
+                img {
+                    @include pxRem(max-height, 600);
+                    width: 100%;
+                }
+            }
+        }
+        .section-sales-off {
+            .sales-off-img {
+                img {
+                    &:first-child {
+                        display: none;
+                    }
+                    &:last-child {
+                        width: 100%;
+                        display: inline-block;
+                    }
+                }
+            }
+            .sales-off-content {
+                left: 5%;
+            }
+        }
+        .section-latest-news {
+            .latest-news-item {
+                position: relative;
+                &:nth-child(2),
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+            .latest-news-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                position: relative;
+            }
+            .btn-slide {
+                display: inline-block;
+                text-align: center;
+                i {
+                    @include pxRem(font-size, 25);
+                    @include pxRem(margin-top, 10);
+                    color: map-get($colors, white);
+                }
+            }
+        }
+    }
+}
+.btn-circle {
+    background-color: map-get($colors, btn-main);
+    color: map-get($colors, white);
+    @include pxRem(font-size, 35);
+    position: relative;
+    margin: 0 auto;
+
+}
+.circle {
+    margin: 0 auto;
+}
+.contentNumber {
+    width: 100%;
+    text-align: center;
+}
+.btn-action {
+    text-align: center;
+}

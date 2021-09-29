@@ -1,0 +1,81 @@
+// === Font === //
+$font-body: 'Open Sans', sans-serif;
+
+// === Font Weight === //
+$font-weight: (
+  normal: 400,
+  medium: 600,
+  bold: 700,
+  bolder: 800,
+);
+
+// == Breakpoints === //
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  wide: 960px,
+  large: 1024px,
+  largest: 1280px
+);
+
+// === Colors === //
+$colors: (
+  primary: #333,
+  white: #fff,
+  black: #222,//header-banner-bg
+  red: rgb(247, 34, 34),
+  wheat: rgb(248, 229, 193),
+  violet: rgb(241, 144, 241),
+  cyan: rgb(16, 252, 252),
+  txt-black: #878787,
+  btn-main: #ff8400,
+  btn-none-hover-bg: rgb(189, 189, 189),
+  btn-none-hover-color: rgb(233, 223, 210),
+  btn-yellow-hover-bg: #d67207, 
+  btn-yellow-hover-color: rgb(248, 245, 241), 
+  btn-sale-bg: #ff4e00,
+  hr-color: #d4d3d3,
+  product-blue: rgb(112, 112, 204),
+  bg-footer-bottom: rgb(8, 8, 8),
+  bottom-hover-color: #76b5f8,
+  btn-move-top-border: rgb(180, 176, 176),
+  btn-move-top-bg: rgb(230, 229, 228),
+);
+
+// === z-index === //
+$zindexs: (
+  dropdown: 1000,
+  sticky: 1020,
+  fixed: 1030,
+  modal-backdrop: 1040,
+  modal: 1050,
+  popover: 1060,
+  tooltip: 1070
+);
+
+// === Typography === //
+$font-size-base: 0.875rem !default; // 14px
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$h-font-size: (
+  h1: $font-size-base * 2.5,
+  h2: $font-size-base * 2,
+  h3: $font-size-base * 1.75,
+  h4: $font-size-base * 1.5,
+  h5: $font-size-base * 1.25,
+  h6: $font-size-base
+);
+//flex-box
+$display-flex: (
+  flex: flex,
+  center: center,
+  between: space-between,
+  around: space-around,
+  start: flex-start,
+  end: flex-end
+);
+//text-align
+$txt-align: (
+  center: center,
+);
