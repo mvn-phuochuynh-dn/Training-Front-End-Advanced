@@ -7,7 +7,7 @@ export default class Table extends Component {
         return dataRegister.map( (item, index) => {
             console.log(item);
             return (
-                <tr key={index}>
+                <tr key={item.email}>
                     <td>{index + 1}</td>
                     <td>{item.name}</td>
                     <td>{item.birthday}</td>
