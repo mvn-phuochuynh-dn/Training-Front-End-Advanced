@@ -1,0 +1,24 @@
+.flex-around {
+    @extend %flex;
+    justify-content: map-get($display-flex, around);
+}
+.flex-center-Y {
+    @extend %flex;
+    align-items: map-get($display-flex, center);
+}
+.flex-center-X {
+    @extend %flex;
+    justify-content: map-get($display-flex, center);
+}
+.flex-start-X {
+    @extend %flex;
+    justify-content: map-get($display-flex, start);
+}
+.flex-end-X {
+    @extend %flex;
+    justify-content: map-get($display-flex, end);
+}
+.flex-between {
+    @extend %flex;
+    justify-content: map-get($display-flex, between);
+}
