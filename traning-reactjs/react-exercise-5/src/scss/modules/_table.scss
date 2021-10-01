@@ -1,0 +1,21 @@
+table {
+    @include pxRem(font-size, 18);
+    width: auto;
+    border-collapse: collapse;
+    th, td {
+        width: 200px;
+        height: 30px;
+    }
+    thead {
+        tr { background-color: map-get($colors, form-bg);}
+    }
+
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}

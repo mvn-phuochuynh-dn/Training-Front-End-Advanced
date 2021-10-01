@@ -1,0 +1,15 @@
+.product-color-blue {
+    background-color: map-get($colors, product-blue );
+}
+.product-color-black {
+    background-color: map-get($colors, black );
+}
+.product-color-pink {
+    background-color: map-get($colors, violet );
+}
+.product-color-red {
+    background-color: map-get($colors, red );
+}
+.product-color-cyan {
+    background-color: map-get($colors, cyan);
+}

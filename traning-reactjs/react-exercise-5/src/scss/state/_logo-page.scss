@@ -1,0 +1,16 @@
+.logo-page-black {
+    img {
+        @include pxRem(width, 100);
+        height: auto;
+        vertical-align: middle;
+    }
+}
+.logo-page-white {
+    display: inline-block;
+    @include pxRem(margin-bottom, 20);
+    img {
+        @include pxRem(width, 100);
+        height: auto;
+        vertical-align: top;
+    }
+}

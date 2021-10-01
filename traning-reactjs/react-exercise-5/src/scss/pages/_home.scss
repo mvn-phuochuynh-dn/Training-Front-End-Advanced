@@ -1,0 +1,8 @@
+.section-table {
+    @include pxRem(font-size, 18);
+    .table-title {
+        text-align: center;
+        color: blue;
+        @include pxRem(font-size, 30);
+    }
+}

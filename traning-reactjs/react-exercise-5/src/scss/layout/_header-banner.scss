@@ -1,0 +1,31 @@
+.header-banner {
+    background-color: map-get($colors, black);
+    position: relative;
+    .header-banner-content {
+        color: map-get($colors, white);
+        width: 100%;
+        i {
+            @include pxRem(font-size, 10);
+            &:hover {
+                @include pxRem(margin-left, 5);
+            }
+        }
+        button {
+            right: 5%;
+            position: absolute;
+            &::before {
+                content: " - ";
+            }
+            &:hover {
+                color: map-get($colors , txt-black );
+            }
+            @include respond-below(wide) {
+                right: 5%;
+            }
+            @include respond-below(medium) {
+                @include pxRem(font-size, 13);
+                right: 5%;
+            }
+        }
+    }
+}
