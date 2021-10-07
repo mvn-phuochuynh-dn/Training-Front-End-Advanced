@@ -7,7 +7,7 @@ export default class Table extends Component {
         return dataRegister.map( (item, index) => {
             console.log(item);
             return (
-                <tr key={item.email}>
+                <tr key={item.name}>
                     <td>{index + 1}</td>
                     <td>{item.name}</td>
                     <td>{item.birthday}</td>
@@ -15,7 +15,7 @@ export default class Table extends Component {
                     {item.gender ==0 ? <td>Female</td> : <td>Male</td>}
                     <td>{item.biography}</td>
                     <td>{item.jobRole}</td>
-                    <td><button onClick={deleteItem(item.email)}>Delete</button></td>
+                    <td><button onClick={deleteItem(item.name)}>Delete</button></td>
                 </tr>
             )
         })
