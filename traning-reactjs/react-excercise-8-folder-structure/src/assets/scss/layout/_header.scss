@@ -1,0 +1,68 @@
+.page-header {
+  .header-top {
+    background-color: aliceblue;
+  }
+  .header-logo {
+    line-height: 80px;
+    img {
+      @include pxRem(width, 100);
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+  .header-actions {
+    float: right;
+    line-height: 80px;
+    li {
+      @include pxRem(margin-left, 20);
+      display: inline-block;
+      &:first-child {
+        margin-left: 0;
+      }
+      i {
+        @include pxRem(font-size, 18);
+      }
+    }
+  }
+  .header-nav {
+    background-color: map-get($colors, second);
+  }
+  .header-menu {
+    display: inline-block;
+    li {
+      @include pxRem(font-size, 18);
+      @include pxRem(padding, 0 15);
+      line-height: 50px;
+      text-transform: uppercase;
+      font-weight: 600;
+      display: inline-block;
+      color: white;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:hover {
+        color: map-get($colors, primary);
+      }
+    }
+  }
+  .menu-sp {
+    @include pxRem(width, 40);
+    @include pxRem(height, 40);
+    @include pxRem(margin-top, 5);
+    display: none;
+  }
+}
+
+@include respond-below(medium) {
+  .page-header {
+    .header-nav {
+      @include pxRem(height, 50);
+    }
+    .header-menu {
+      display: none;
+    }
+    .menu-sp {
+      display: inline-block;
+    }
+  }
+}
