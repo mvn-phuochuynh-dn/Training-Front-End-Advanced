@@ -1,18 +1,94 @@
-.btn {
-  @include pxRem(font-size, 14);
-  border: none;
-  background: none;
-}
 .btn-primary {
-  width: 100%;
-  display: block;
-  background: #173346;
-  color: white;
-  text-align: center;
-  padding: 6px 6px;
-  margin-top: 10px;
-  border-radius: 8px;
-  &:hover {
-    color: #6bb039;
-  }
+    width: f-pxRem(180);
+    height: f-pxRem(45);
+    display:block;
+    text-align: map-get($txt-align, center);
+    padding-top: f-pxRem(15);
+    color: map-get($colors, white);
+}
+.btn-none-color {
+    background-color: none;
+    border: 1px solid white;
+    &:hover {
+        background-color: map-get($colors, btn-none-hover-bg);
+        color: map-get($colors, btn-none-hover-color);
+    }
+}
+.btn-yellow {
+    outline: none;
+    background-color: map-get($colors, btn-main);
+    &:hover {
+        background-color: map-get($colors, btn-yellow-hover-bg);
+        color: map-get($colors, btn-yellow-hover-color);;
+    }
+}
+.btn-black {
+    background-color: map-get($colors, black);
+    &:hover {
+        background-color: map-get($colors, btn-yellow-hover-bg);
+    }
+}
+.btn-sale {
+    width: f-pxRem(60);
+    height: f-pxRem(25);
+    border: none;
+    background-color: map-get($colors, btn-sale-bg);
+    font-size: f-pxRem(16);
+    color:  map-get($colors, white);
+    padding-top: f-pxRem(5);
+    text-align: map-get($txt-align, center);
+}
+.btn-left {
+    display: inline-block;
+}
+.btn-right {
+    float: left;
+    margin-right: f-pxRem(10);
+}
+.btn-move-top {
+    $border-color: map-get($colors, btn-move-top-border );
+    $bg-color: map-get($colors, btn-move-top-bg );
+    display: inline-block;
+    width: f-pxRem(50);
+    height: f-pxRem(50);
+    border: f-pxRem(.5) solid $border-color;
+    background-color: $bg-color;
+    border-radius: f-pxRem(5);
+    position: fixed;
+    bottom: f-pxRem(50);
+    right: f-pxRem(40);
+}
+.btn-view-cart {
+    @include pxRem(height, 65);
+    @include pxRem(width, 35);
+    border: none;
+    background-color: map-get($colors, btn-main);
+}
+.btn-slide {
+    @include pxRem(height, 50);
+    @include pxRem(width, 50);
+    border: none;
+    background-color: map-get($colors, btn-main);
+}
+.btn-circle {
+    border-radius: 50%;
+}
+.btn-action {
+    width: f-pxRem(50);
+    height: f-pxRem(25);
+    display:block;
+    padding-top: f-pxRem(2);
+    color: map-get($colors, white);
+    border: 1px solid white;
+    &:hover {
+        background-color: map-get($colors, btn-none-hover-bg);
+        color: map-get($colors, btn-none-hover-color);
+    }
+    margin: 0 auto;
+}
+.btn-blue {
+    background-color: rgb(83, 83, 247)
+}
+.btn-red {
+    background-color: rgb(250, 66, 66);
 }

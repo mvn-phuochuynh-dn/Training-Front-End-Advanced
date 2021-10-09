@@ -6,8 +6,8 @@ body {
   font-weight: map-get($font-weight, normal);
   font-size: $font-size-base;
   letter-spacing: -.025em;
+  color: map-get($colors, txt-black );
 }
-
 p {
   line-height: 1.45;
 }
@@ -23,9 +23,6 @@ a {
 img {
   max-width: 100%;
 }
-a img {
-  vertical-align: top;
-}
 h1, h2, h3, h4, h5, h6 {
   font-weight: map-get($font-weight, medium);
 }
@@ -34,7 +31,6 @@ h1 {
 }
 h2 {
   font-size: map-get($h-font-size, h2);
-  color: green;
 }
 h3 {
   font-size: map-get($h-font-size, h3);
@@ -47,9 +43,4 @@ h5 {
 }
 h6 {
   font-size: map-get($h-font-size, h6);
-}
-
-.title {
-  @include pxRem(font-size, 24);
-  font-size: 24px;
 }

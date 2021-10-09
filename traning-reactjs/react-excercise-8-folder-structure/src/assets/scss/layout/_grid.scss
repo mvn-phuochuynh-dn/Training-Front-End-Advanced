@@ -60,7 +60,13 @@ $container-width: 1200px;
 }
 
 /* Grid for screen min-width: $large
- * Ex: col-large-1, col-large-2 */
+ * Ex:col-large-1 , col-large-2 */
+ @include respond-above(wide) {
+  @include build-grid(wide);
+}
+
+/* Grid for screen min-width: $large
+ * Ex:col-large-1 , col-large-2 */
 @include respond-above(large) {
   @include build-grid(large);
 }
