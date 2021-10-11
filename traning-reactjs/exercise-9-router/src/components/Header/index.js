@@ -20,6 +20,7 @@ export default function Header() {
                         <li className="header-item pl-10 pr-10"><NavLink to="#">PORTFOLIO</NavLink></li>
                         <li className="header-item pl-10 pr-10"><NavLink to="#">LOOKBOOK</NavLink></li>
                         <li className="header-item pl-10 pr-10"><NavLink to="/blog">BLOG</NavLink></li>
+                        <li className="header-item pl-10 pr-10"><NavLink to="/profile">ACCOUNT</NavLink></li>
                     </ul>
                 </nav>
                 <div className="header-socials col-2">

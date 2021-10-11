@@ -4,6 +4,7 @@ import { Footer, Header, HeaderBanner } from './components';
 import { Blog, Home, ProductDetail, Products } from './pages/Features';
 import { Login } from './pages/Auth';
 import PageNotFound from './pages/PageNotFound';
+import Profile from './pages/Account/Profile';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path='/login' component={Login}/>
+          <Route exact path='/profile' component={Profile}/>
           <Route exact path='/home' component={Home} />
           <Route exact path='/products' component={Products} />
           {/* dùng props.math để tạo param cho route */}

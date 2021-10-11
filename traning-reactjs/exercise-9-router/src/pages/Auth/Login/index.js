@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Redirect } from 'react-router';
 
 export default function Login(props) {
 
@@ -25,7 +26,9 @@ export default function Login(props) {
             // props.history.goBack();//về lại trang trước đó
             //chỉ định trang chuyển hướng
             // props.history.push('/home');//khi back lại sẽ về trang trước(login page)
-            props.history.replace('/home');//khi back lại sẽ về trang trước khi chuyển đến login(login page), tức là homePage sẽ thay thế loginPage
+            // props.history.replace('/home');//khi back lại sẽ về trang trước khi chuyển đến login(login page), tức là homePage sẽ thay thế loginPage
+            props.history.goBack();
+            localStorage.setItem('userLogin',JSON.stringify(userLogin))
         } else {
             alert("Login Fail! Check your Username and your Password, please!!")
             return;
