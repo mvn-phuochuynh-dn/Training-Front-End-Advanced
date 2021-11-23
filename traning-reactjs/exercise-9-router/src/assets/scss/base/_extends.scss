@@ -1,0 +1,20 @@
+%clr {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+%flex {
+  display: flex;
+}
+%transX {
+  transform: translateX(-50%);
+}
+%transY {
+  transform: translateY(-50%);
+}
+%radiusCircle {
+  border-radius: 50%;
+}
+
