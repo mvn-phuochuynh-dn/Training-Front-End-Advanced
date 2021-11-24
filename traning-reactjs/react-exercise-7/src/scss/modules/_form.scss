@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-register {
+    margin: 0 auto;
+    width: 50%;
+    background-color: map-get($colors, form-bg);
+    .form-name {
+        @include pxRem(font-size, 30);
+        color: map-get($colors, title-color);
+        text-align: center;
+    }
+    .title {
+        h2 {
+            @include pxRem(width, 50);
+            @include pxRem(height, 50);
+            background-color: map-get($colors, title-bg);
+            border-radius: 500%;
+            text-align: center;
+            display: inline-block;
+        }
+        h3 {
+            display: inline;
+        }
+    }
+    label {
+        @include pxRem(padding-left, 10);
+        @include pxRem(font-size, 18);
+        color: map-get($colors, label-color);
+        display: block;
+    }
+    input,
+    select,
+    textarea {
+        @include pxRem(height, 30);
+        width: 90%;
+    }
+    .Gender {
+        input {
+            @include pxRem(height, 20);
+            width: 10%;
+        }
+    }
+
+    .interest-item {
+        @include pxRem(height, 20);
+        width: 10%;
+        margin-left: 10px;
+    }
+}
+

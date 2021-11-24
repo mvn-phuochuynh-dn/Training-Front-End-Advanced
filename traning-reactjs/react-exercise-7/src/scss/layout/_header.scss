@@ -1,0 +1,75 @@
+.header-socials {
+    .header-social-list {
+        .header-social-item {
+            i {
+                @include pxRem(font-size, 16);
+                color: map-get($colors, black);
+                &:hover {
+                    color: map-get($colors, btn-main);
+                }
+            }
+        }
+    }
+}
+.page-header {
+    @include pxRem(line-height, 80);
+    .header-nav {
+        .header-menu {
+            text-align: center;
+        }
+        .header-item {
+            a {
+                font-weight: map-get($font-weight, bolder);
+                color: map-get($colors, black);
+                &:hover {
+                    color: map-get($colors, btn-main);
+                }
+            }
+        }
+    }
+}
+.page-header-large,
+.page-header-medium {
+    display: none;
+    @include pxRem(line-height, 80);
+    .logo-large {
+        text-align: map-get($txt-align, center);
+    }
+    .header-list-img {
+        img {
+            @include pxRem(width, 50);
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+}
+.btn-view-cart {
+    i {
+        display: block;
+    }
+}
+// === RESPOND BELOW ===
+@include respond-below(large) {
+    .page-header {
+        display: none;
+    }
+    .page-header-large {
+        display: block;
+    }
+}
+@include respond-below(medium) {
+    .page-header-large {
+        display: none;
+    }
+    .page-header-medium {
+        display: block;
+        @include pxRem(padding-left, 150);
+        @include pxRem(padding-right, 150);
+    }
+}
+@include respond-below(wide) {
+    .page-header-large {
+        @include pxRem(padding-left, 100);
+        @include pxRem(padding-right, 100);
+    }
+}

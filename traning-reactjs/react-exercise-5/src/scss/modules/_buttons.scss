@@ -1,0 +1,11 @@
+.btn-submit {
+    @include pxRem(height, 50);
+    @include pxRem(border-radius, 10);
+    @include pxRem(height, 50);
+    background-color: map-get($colors, btn-bg );
+    text-align: center;
+    width: 90%;
+    &:hover {
+        background-color: map-get($colors, btn-bg-hover );
+    }
+}
